@@ -1,3 +1,5 @@
+# Custom Keybindings with Karabiner Elements
+
 Requirements:
 - [Karabiner Elements](https://karabiner-elements.pqrs.org)
 
