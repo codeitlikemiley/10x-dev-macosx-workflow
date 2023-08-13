@@ -1,0 +1,3117 @@
+![[Screenshot 2023-08-14 at 12.35.49 AM.png]]
+
+```json
+{
+
+"global": {
+
+"ask_for_confirmation_before_quitting": true,
+
+"check_for_updates_on_startup": false,
+
+"show_in_menu_bar": true,
+
+"show_profile_name_in_menu_bar": false,
+
+"unsafe_ui": false
+
+},
+
+"profiles": [
+
+{
+
+"complex_modifications": {
+
+"parameters": {
+
+"basic.simultaneous_threshold_milliseconds": 50,
+
+"basic.to_delayed_action_delay_milliseconds": 500,
+
+"basic.to_if_alone_timeout_milliseconds": 1000,
+
+"basic.to_if_held_down_threshold_milliseconds": 500,
+
+"mouse_motion_to_scroll.speed": 100
+
+},
+
+"rules": [
+
+{
+
+"description": "RIGHT COMMAND : (DUO) COMMAND+OPTION OR ESCAPE",
+
+"manipulators": [
+
+{
+
+"from": {
+
+"key_code": "right_command",
+
+"modifiers": {
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "left_command",
+
+"modifiers": [
+
+"left_option"
+
+]
+
+}
+
+],
+
+"to_if_alone": [
+
+{
+
+"key_code": "escape"
+
+}
+
+],
+
+"type": "basic"
+
+}
+
+]
+
+},
+
+{
+
+"description": "FOCUS TABBER KEY : COMMAND+OPTION+CONTROL or TAB",
+
+"manipulators": [
+
+{
+
+"from": {
+
+"key_code": "tab",
+
+"modifiers": {
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "left_control",
+
+"modifiers": [
+
+"left_option",
+
+"left_command"
+
+]
+
+}
+
+],
+
+"to_if_alone": [
+
+{
+
+"key_code": "tab"
+
+}
+
+],
+
+"type": "basic"
+
+}
+
+]
+
+},
+
+{
+
+"description": "RIGHT OPTION : (DUO) CONTROL+COMMAND or ESCAPE",
+
+"manipulators": [
+
+{
+
+"from": {
+
+"key_code": "right_option",
+
+"modifiers": {
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "left_control",
+
+"modifiers": [
+
+"left_command"
+
+]
+
+}
+
+],
+
+"to_if_alone": [
+
+{
+
+"key_code": "escape"
+
+}
+
+],
+
+"type": "basic"
+
+}
+
+]
+
+},
+
+{
+
+"description": "CAPS_LOCK as HYPER or ESCAPE (If Alone)",
+
+"manipulators": [
+
+{
+
+"from": {
+
+"key_code": "caps_lock",
+
+"modifiers": {
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "left_shift",
+
+"modifiers": [
+
+"left_command",
+
+"left_control",
+
+"left_option"
+
+]
+
+}
+
+],
+
+"to_if_alone": [
+
+{
+
+"key_code": "escape"
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"description": "Avoid starting sysdiagnose with the built-in macOS shortcut cmd+shift+option+ctrl+,",
+
+"from": {
+
+"key_code": "comma",
+
+"modifiers": {
+
+"mandatory": [
+
+"command",
+
+"shift",
+
+"option",
+
+"control"
+
+]
+
+}
+
+},
+
+"to": [],
+
+"type": "basic"
+
+},
+
+{
+
+"description": "Avoid starting sysdiagnose with the built-in macOS shortcut cmd+shift+option+ctrl+.",
+
+"from": {
+
+"key_code": "period",
+
+"modifiers": {
+
+"mandatory": [
+
+"command",
+
+"shift",
+
+"option",
+
+"control"
+
+]
+
+}
+
+},
+
+"to": [],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"description": "Avoid starting sysdiagnose with the built-in macOS shortcut cmd+shift+option+ctrl+/",
+
+"key_code": "slash",
+
+"modifiers": {
+
+"mandatory": [
+
+"command",
+
+"shift",
+
+"option",
+
+"control"
+
+]
+
+}
+
+},
+
+"to": [],
+
+"type": "basic"
+
+}
+
+]
+
+},
+
+{
+
+"description": "CAPS_LOCK + hjkl,Enter == Arrow Keys , CAP_SLOCK",
+
+"manipulators": [
+
+{
+
+"from": {
+
+"key_code": "return_or_enter",
+
+"modifiers": {
+
+"mandatory": [
+
+"left_shift",
+
+"left_command",
+
+"left_control",
+
+"left_option"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "caps_lock"
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "k",
+
+"modifiers": {
+
+"mandatory": [
+
+"left_shift",
+
+"left_command",
+
+"left_control",
+
+"left_option"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "up_arrow"
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "h",
+
+"modifiers": {
+
+"mandatory": [
+
+"left_shift",
+
+"left_command",
+
+"left_control",
+
+"left_option"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "left_arrow"
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "j",
+
+"modifiers": {
+
+"mandatory": [
+
+"left_shift",
+
+"left_command",
+
+"left_control",
+
+"left_option"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "down_arrow"
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "l",
+
+"modifiers": {
+
+"mandatory": [
+
+"left_shift",
+
+"left_command",
+
+"left_control",
+
+"left_option"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "right_arrow"
+
+}
+
+],
+
+"type": "basic"
+
+}
+
+]
+
+},
+
+{
+
+"description": "Change fn + letter to left_control + letter",
+
+"manipulators": [
+
+{
+
+"from": {
+
+"key_code": "a",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "a",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "b",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "b",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "c",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "c",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "d",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "d",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "e",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "e",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "f",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "f",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "g",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "g",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "h",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "h",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "i",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "i",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "j",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "j",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "k",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "k",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "l",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "l",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "m",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "m",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "n",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "n",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "o",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "o",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "p",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "p",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "q",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "q",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "r",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "r",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "s",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "s",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "t",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "t",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "u",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "u",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "v",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "v",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "w",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "w",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "x",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "x",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "y",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "y",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+},
+
+{
+
+"from": {
+
+"key_code": "z",
+
+"modifiers": {
+
+"mandatory": [
+
+"fn"
+
+],
+
+"optional": [
+
+"any"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "z",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+}
+
+]
+
+},
+
+{
+
+"description": "CMD+S to CTRL+S for terminals",
+
+"manipulators": [
+
+{
+
+"conditions": [
+
+{
+
+"bundle_identifiers": [
+
+"^io\\.alacritty$",
+
+"^com\\.apple\\.Terminal$",
+
+"^com\\.googlecode\\.iterm2$",
+
+"^co\\.zeit\\.hyperterm$",
+
+"^co\\.zeit\\.hyper$",
+
+"^net\\.kovidgoyal\\.kitty$"
+
+],
+
+"type": "frontmost_application_if"
+
+}
+
+],
+
+"from": {
+
+"key_code": "s",
+
+"modifiers": {
+
+"mandatory": [
+
+"command"
+
+]
+
+}
+
+},
+
+"to": [
+
+{
+
+"key_code": "s",
+
+"modifiers": [
+
+"left_control"
+
+]
+
+}
+
+],
+
+"type": "basic"
+
+}
+
+]
+
+},
+
+{
+
+"description": "simultaneous keypresses example",
+
+"manipulators": [
+
+{
+
+"from": {
+
+"modifiers": {
+
+"mandatory": [
+
+"control",
+
+"q"
+
+]
+
+},
+
+"simultaneous": [
+
+{
+
+"key_code": "a"
+
+}
+
+]
+
+},
+
+"to": [
+
+{
+
+"apple_vendor_keyboard_key_code": "mission_control"
+
+}
+
+],
+
+"type": "basic"
+
+}
+
+]
+
+}
+
+]
+
+},
+
+"devices": [
+
+{
+
+"disable_built_in_keyboard_if_exists": false,
+
+"fn_function_keys": [],
+
+"identifiers": {
+
+"is_keyboard": true,
+
+"is_pointing_device": false,
+
+"product_id": 50475,
+
+"vendor_id": 1133
+
+},
+
+"ignore": true,
+
+"manipulate_caps_lock_led": false,
+
+"simple_modifications": [],
+
+"treat_as_built_in_keyboard": false
+
+},
+
+{
+
+"disable_built_in_keyboard_if_exists": true,
+
+"fn_function_keys": [],
+
+"identifiers": {
+
+"is_keyboard": true,
+
+"is_pointing_device": true,
+
+"product_id": 45091,
+
+"vendor_id": 1133
+
+},
+
+"ignore": true,
+
+"manipulate_caps_lock_led": false,
+
+"simple_modifications": [],
+
+"treat_as_built_in_keyboard": false
+
+},
+
+{
+
+"disable_built_in_keyboard_if_exists": false,
+
+"fn_function_keys": [],
+
+"identifiers": {
+
+"is_keyboard": true,
+
+"is_pointing_device": false,
+
+"product_id": 45929,
+
+"vendor_id": 1133
+
+},
+
+"ignore": false,
+
+"manipulate_caps_lock_led": true,
+
+"simple_modifications": [],
+
+"treat_as_built_in_keyboard": false
+
+},
+
+{
+
+"disable_built_in_keyboard_if_exists": false,
+
+"fn_function_keys": [],
+
+"identifiers": {
+
+"is_keyboard": true,
+
+"is_pointing_device": false,
+
+"product_id": 641,
+
+"vendor_id": 1452
+
+},
+
+"ignore": false,
+
+"manipulate_caps_lock_led": false,
+
+"simple_modifications": [],
+
+"treat_as_built_in_keyboard": false
+
+},
+
+{
+
+"disable_built_in_keyboard_if_exists": false,
+
+"fn_function_keys": [],
+
+"identifiers": {
+
+"is_keyboard": false,
+
+"is_pointing_device": true,
+
+"product_id": 641,
+
+"vendor_id": 1452
+
+},
+
+"ignore": true,
+
+"manipulate_caps_lock_led": false,
+
+"simple_modifications": [],
+
+"treat_as_built_in_keyboard": false
+
+},
+
+{
+
+"disable_built_in_keyboard_if_exists": false,
+
+"fn_function_keys": [],
+
+"identifiers": {
+
+"is_keyboard": false,
+
+"is_pointing_device": true,
+
+"product_id": 50475,
+
+"vendor_id": 1133
+
+},
+
+"ignore": true,
+
+"manipulate_caps_lock_led": false,
+
+"simple_modifications": [],
+
+"treat_as_built_in_keyboard": false
+
+},
+
+{
+
+"disable_built_in_keyboard_if_exists": false,
+
+"fn_function_keys": [],
+
+"identifiers": {
+
+"is_keyboard": true,
+
+"is_pointing_device": false,
+
+"product_id": 50504,
+
+"vendor_id": 1133
+
+},
+
+"ignore": false,
+
+"manipulate_caps_lock_led": true,
+
+"simple_modifications": [],
+
+"treat_as_built_in_keyboard": true
+
+},
+
+{
+
+"disable_built_in_keyboard_if_exists": false,
+
+"fn_function_keys": [],
+
+"identifiers": {
+
+"is_keyboard": false,
+
+"is_pointing_device": true,
+
+"product_id": 50504,
+
+"vendor_id": 1133
+
+},
+
+"ignore": true,
+
+"manipulate_caps_lock_led": false,
+
+"simple_modifications": [],
+
+"treat_as_built_in_keyboard": false
+
+},
+
+{
+
+"disable_built_in_keyboard_if_exists": false,
+
+"fn_function_keys": [],
+
+"identifiers": {
+
+"is_keyboard": true,
+
+"is_pointing_device": false,
+
+"product_id": 834,
+
+"vendor_id": 1452
+
+},
+
+"ignore": false,
+
+"manipulate_caps_lock_led": true,
+
+"simple_modifications": [],
+
+"treat_as_built_in_keyboard": false
+
+},
+
+{
+
+"disable_built_in_keyboard_if_exists": false,
+
+"fn_function_keys": [],
+
+"identifiers": {
+
+"is_keyboard": false,
+
+"is_pointing_device": true,
+
+"product_id": 834,
+
+"vendor_id": 1452
+
+},
+
+"ignore": true,
+
+"manipulate_caps_lock_led": false,
+
+"simple_modifications": [],
+
+"treat_as_built_in_keyboard": false
+
+},
+
+{
+
+"disable_built_in_keyboard_if_exists": false,
+
+"fn_function_keys": [],
+
+"identifiers": {
+
+"is_keyboard": true,
+
+"is_pointing_device": false,
+
+"product_id": 0,
+
+"vendor_id": 0
+
+},
+
+"ignore": false,
+
+"manipulate_caps_lock_led": true,
+
+"simple_modifications": [],
+
+"treat_as_built_in_keyboard": false
+
+},
+
+{
+
+"disable_built_in_keyboard_if_exists": false,
+
+"fn_function_keys": [],
+
+"identifiers": {
+
+"is_keyboard": true,
+
+"is_pointing_device": false,
+
+"product_id": 6215,
+
+"vendor_id": 2821
+
+},
+
+"ignore": false,
+
+"manipulate_caps_lock_led": true,
+
+"simple_modifications": [],
+
+"treat_as_built_in_keyboard": false
+
+},
+
+{
+
+"disable_built_in_keyboard_if_exists": false,
+
+"fn_function_keys": [],
+
+"identifiers": {
+
+"is_keyboard": false,
+
+"is_pointing_device": true,
+
+"product_id": 6215,
+
+"vendor_id": 2821
+
+},
+
+"ignore": true,
+
+"manipulate_caps_lock_led": false,
+
+"simple_modifications": [],
+
+"treat_as_built_in_keyboard": false
+
+}
+
+],
+
+"fn_function_keys": [
+
+{
+
+"from": {
+
+"key_code": "f1"
+
+},
+
+"to": [
+
+{
+
+"consumer_key_code": "display_brightness_decrement"
+
+}
+
+]
+
+},
+
+{
+
+"from": {
+
+"key_code": "f2"
+
+},
+
+"to": [
+
+{
+
+"consumer_key_code": "display_brightness_increment"
+
+}
+
+]
+
+},
+
+{
+
+"from": {
+
+"key_code": "f3"
+
+},
+
+"to": [
+
+{
+
+"apple_vendor_keyboard_key_code": "mission_control"
+
+}
+
+]
+
+},
+
+{
+
+"from": {
+
+"key_code": "f4"
+
+},
+
+"to": [
+
+{
+
+"apple_vendor_keyboard_key_code": "spotlight"
+
+}
+
+]
+
+},
+
+{
+
+"from": {
+
+"key_code": "f5"
+
+},
+
+"to": [
+
+{
+
+"consumer_key_code": "mute"
+
+}
+
+]
+
+},
+
+{
+
+"from": {
+
+"key_code": "f6"
+
+},
+
+"to": [
+
+{
+
+"key_code": "power"
+
+}
+
+]
+
+},
+
+{
+
+"from": {
+
+"key_code": "f7"
+
+},
+
+"to": [
+
+{
+
+"consumer_key_code": "rewind"
+
+}
+
+]
+
+},
+
+{
+
+"from": {
+
+"key_code": "f8"
+
+},
+
+"to": [
+
+{
+
+"consumer_key_code": "play_or_pause"
+
+}
+
+]
+
+},
+
+{
+
+"from": {
+
+"key_code": "f9"
+
+},
+
+"to": [
+
+{
+
+"consumer_key_code": "fast_forward"
+
+}
+
+]
+
+},
+
+{
+
+"from": {
+
+"key_code": "f10"
+
+},
+
+"to": [
+
+{
+
+"consumer_key_code": "mute"
+
+}
+
+]
+
+},
+
+{
+
+"from": {
+
+"key_code": "f11"
+
+},
+
+"to": [
+
+{
+
+"consumer_key_code": "volume_decrement"
+
+}
+
+]
+
+},
+
+{
+
+"from": {
+
+"key_code": "f12"
+
+},
+
+"to": [
+
+{
+
+"consumer_key_code": "volume_increment"
+
+}
+
+]
+
+}
+
+],
+
+"name": "Goldcoders",
+
+"parameters": {
+
+"delay_milliseconds_before_open_device": 1000
+
+},
+
+"selected": true,
+
+"simple_modifications": [],
+
+"virtual_hid_keyboard": {
+
+"country_code": 0,
+
+"indicate_sticky_modifier_keys_state": true,
+
+"mouse_key_xy_scale": 100
+
+}
+
+},
+
+{
+
+"complex_modifications": {
+
+"parameters": {
+
+"basic.simultaneous_threshold_milliseconds": 50,
+
+"basic.to_delayed_action_delay_milliseconds": 500,
+
+"basic.to_if_alone_timeout_milliseconds": 1000,
+
+"basic.to_if_held_down_threshold_milliseconds": 500,
+
+"mouse_motion_to_scroll.speed": 100
+
+},
+
+"rules": []
+
+},
+
+"devices": [
+
+{
+
+"disable_built_in_keyboard_if_exists": false,
+
+"fn_function_keys": [],
+
+"identifiers": {
+
+"is_keyboard": true,
+
+"is_pointing_device": false,
+
+"product_id": 641,
+
+"vendor_id": 1452
+
+},
+
+"ignore": false,
+
+"manipulate_caps_lock_led": true,
+
+"simple_modifications": [],
+
+"treat_as_built_in_keyboard": false
+
+},
+
+{
+
+"disable_built_in_keyboard_if_exists": false,
+
+"fn_function_keys": [],
+
+"identifiers": {
+
+"is_keyboard": false,
+
+"is_pointing_device": true,
+
+"product_id": 641,
+
+"vendor_id": 1452
+
+},
+
+"ignore": true,
+
+"manipulate_caps_lock_led": false,
+
+"simple_modifications": [],
+
+"treat_as_built_in_keyboard": false
+
+},
+
+{
+
+"disable_built_in_keyboard_if_exists": false,
+
+"fn_function_keys": [],
+
+"identifiers": {
+
+"is_keyboard": true,
+
+"is_pointing_device": false,
+
+"product_id": 50504,
+
+"vendor_id": 1133
+
+},
+
+"ignore": false,
+
+"manipulate_caps_lock_led": true,
+
+"simple_modifications": [
+
+{
+
+"from": {
+
+"key_code": "left_command"
+
+},
+
+"to": [
+
+{
+
+"key_code": "left_option"
+
+}
+
+]
+
+},
+
+{
+
+"from": {
+
+"key_code": "left_option"
+
+},
+
+"to": [
+
+{
+
+"key_code": "left_command"
+
+}
+
+]
+
+}
+
+],
+
+"treat_as_built_in_keyboard": false
+
+},
+
+{
+
+"disable_built_in_keyboard_if_exists": false,
+
+"fn_function_keys": [],
+
+"identifiers": {
+
+"is_keyboard": true,
+
+"is_pointing_device": false,
+
+"product_id": 50475,
+
+"vendor_id": 1133
+
+},
+
+"ignore": false,
+
+"manipulate_caps_lock_led": true,
+
+"simple_modifications": [],
+
+"treat_as_built_in_keyboard": false
+
+},
+
+{
+
+"disable_built_in_keyboard_if_exists": false,
+
+"fn_function_keys": [],
+
+"identifiers": {
+
+"is_keyboard": false,
+
+"is_pointing_device": true,
+
+"product_id": 50475,
+
+"vendor_id": 1133
+
+},
+
+"ignore": true,
+
+"manipulate_caps_lock_led": false,
+
+"simple_modifications": [],
+
+"treat_as_built_in_keyboard": false
+
+},
+
+{
+
+"disable_built_in_keyboard_if_exists": false,
+
+"fn_function_keys": [],
+
+"identifiers": {
+
+"is_keyboard": false,
+
+"is_pointing_device": true,
+
+"product_id": 50504,
+
+"vendor_id": 1133
+
+},
+
+"ignore": true,
+
+"manipulate_caps_lock_led": false,
+
+"simple_modifications": [],
+
+"treat_as_built_in_keyboard": false
+
+},
+
+{
+
+"disable_built_in_keyboard_if_exists": false,
+
+"fn_function_keys": [],
+
+"identifiers": {
+
+"is_keyboard": true,
+
+"is_pointing_device": false,
+
+"product_id": 834,
+
+"vendor_id": 1452
+
+},
+
+"ignore": false,
+
+"manipulate_caps_lock_led": true,
+
+"simple_modifications": [],
+
+"treat_as_built_in_keyboard": false
+
+},
+
+{
+
+"disable_built_in_keyboard_if_exists": false,
+
+"fn_function_keys": [],
+
+"identifiers": {
+
+"is_keyboard": false,
+
+"is_pointing_device": true,
+
+"product_id": 834,
+
+"vendor_id": 1452
+
+},
+
+"ignore": true,
+
+"manipulate_caps_lock_led": false,
+
+"simple_modifications": [],
+
+"treat_as_built_in_keyboard": false
+
+},
+
+{
+
+"disable_built_in_keyboard_if_exists": false,
+
+"fn_function_keys": [],
+
+"identifiers": {
+
+"is_keyboard": true,
+
+"is_pointing_device": false,
+
+"product_id": 0,
+
+"vendor_id": 0
+
+},
+
+"ignore": false,
+
+"manipulate_caps_lock_led": true,
+
+"simple_modifications": [],
+
+"treat_as_built_in_keyboard": false
+
+}
+
+],
+
+"fn_function_keys": [
+
+{
+
+"from": {
+
+"key_code": "f1"
+
+},
+
+"to": [
+
+{
+
+"consumer_key_code": "display_brightness_decrement"
+
+}
+
+]
+
+},
+
+{
+
+"from": {
+
+"key_code": "f2"
+
+},
+
+"to": [
+
+{
+
+"consumer_key_code": "display_brightness_increment"
+
+}
+
+]
+
+},
+
+{
+
+"from": {
+
+"key_code": "f3"
+
+},
+
+"to": [
+
+{
+
+"apple_vendor_keyboard_key_code": "mission_control"
+
+}
+
+]
+
+},
+
+{
+
+"from": {
+
+"key_code": "f4"
+
+},
+
+"to": [
+
+{
+
+"apple_vendor_keyboard_key_code": "spotlight"
+
+}
+
+]
+
+},
+
+{
+
+"from": {
+
+"key_code": "f5"
+
+},
+
+"to": [
+
+{
+
+"consumer_key_code": "dictation"
+
+}
+
+]
+
+},
+
+{
+
+"from": {
+
+"key_code": "f6"
+
+},
+
+"to": [
+
+{
+
+"key_code": "f6"
+
+}
+
+]
+
+},
+
+{
+
+"from": {
+
+"key_code": "f7"
+
+},
+
+"to": [
+
+{
+
+"consumer_key_code": "rewind"
+
+}
+
+]
+
+},
+
+{
+
+"from": {
+
+"key_code": "f8"
+
+},
+
+"to": [
+
+{
+
+"consumer_key_code": "play_or_pause"
+
+}
+
+]
+
+},
+
+{
+
+"from": {
+
+"key_code": "f9"
+
+},
+
+"to": [
+
+{
+
+"consumer_key_code": "fast_forward"
+
+}
+
+]
+
+},
+
+{
+
+"from": {
+
+"key_code": "f10"
+
+},
+
+"to": [
+
+{
+
+"consumer_key_code": "mute"
+
+}
+
+]
+
+},
+
+{
+
+"from": {
+
+"key_code": "f11"
+
+},
+
+"to": [
+
+{
+
+"consumer_key_code": "volume_decrement"
+
+}
+
+]
+
+},
+
+{
+
+"from": {
+
+"key_code": "f12"
+
+},
+
+"to": [
+
+{
+
+"consumer_key_code": "volume_increment"
+
+}
+
+]
+
+}
+
+],
+
+"name": "Default",
+
+"parameters": {
+
+"delay_milliseconds_before_open_device": 1000
+
+},
+
+"selected": false,
+
+"simple_modifications": [],
+
+"virtual_hid_keyboard": {
+
+"country_code": 0,
+
+"indicate_sticky_modifier_keys_state": true,
+
+"mouse_key_xy_scale": 100
+
+}
+
+}
+
+]
+
+}
+```

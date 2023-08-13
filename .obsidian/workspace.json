@@ -1,0 +1,167 @@
+{
+  "main": {
+    "id": "a8d13612d3efd269",
+    "type": "split",
+    "children": [
+      {
+        "id": "732700f7939c849a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e256eee52cae5129",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "54d8691955c6f456",
+    "type": "split",
+    "children": [
+      {
+        "id": "6a44866b51b01992",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2aad4a37804c013f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "82a20c490d6a800f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "28b8a2a30db75e7a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
+            "id": "b97957452cbc9ae3",
+            "type": "leaf",
+            "state": {
+              "type": "mk-file-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "cde718c2f8e69c07",
+    "type": "split",
+    "children": [
+      {
+        "id": "a0371e7b51219fb7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7d87b158169bc8c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "126712b929729c63",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "327b0f49277e9fa6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "9ec42ba399a336ba",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "e256eee52cae5129",
+  "lastOpenFiles": [
+    "Untitled.canvas",
+    "Untitled 2.canvas",
+    "Untitled 1.canvas",
+    "Window Manager Keybindings.md",
+    "2023-08-14.md",
+    "Workflow on MacOSx.md",
+    "Context/MacOS Productivity Workflow.mdb",
+    "CAPS  + HJKL (as Arrow Key).md",
+    "Hyper Key Combos.md",
+    "Tab Key Combos.md",
+    "Screenshot 2023-08-14 at 12.35.49 AM.png",
+    "Karabiner Elements.md",
+    "Context/spacesLastSync.log",
+    "Context"
+  ]
+}
