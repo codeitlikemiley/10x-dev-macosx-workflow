@@ -1,4 +1,5 @@
-The following Keys are mapped from Settings->Keyboard
+
+## The following Keys are mapped from Settings->Keyboard
 
 1. <mark style="background: #FFB8EBA6;"> HYPER + b</mark>  === `Show Notifications Center` 
 2. <mark style="background: #BBFABBA6;">HYPER + a</mark>  === `Show Launchpad`
