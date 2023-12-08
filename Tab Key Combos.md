@@ -1,5 +1,7 @@
 # Tab Key Combos
 
+## Combo with Yabai / Skhd 
+
 Requirements:
 
 - [yabai](https://github.com/koekeishiya/yabai)
@@ -14,12 +16,14 @@ Configuration:
 [skhdrc](https://github.com/codeitlikemiley/10x-dev-macosx-workflow/blob/main/skhdrc)
 
 
-## Custom Keyboard Shortcuts
 
-> Settings->Keyboard->Keyboard Shortcuts
+## Combo with RayCast
 
-1. <mark style="background: #FFB8EBA6;">Tab + b</mark> === Show/Hide Dock
-2. <mark style="background: #FF5582A6;">Tab + q</mark> === Focus on Menu Bar
-3. <mark style="background: #FFB86CA6;">Tab + e </mark>=== Focus on Toolbar
-4. <mark style="background: #D2B3FFA6;">Tab + f </mark>=== Enter FullScreen
-5. <mark style="background: #CACFD9A6;">Tab + x </mark>=== Exit FullScreen
+> I notice that Raycast can cause a lot of key collision issue if your not careful and can override global keys
+> as such I am assign my <kbd>TAB</kbd> key on all keyboard shortcut related to RayCast.
+
+Its possible to have some functionalities like a windows manager in RayCash
+
+TODO: 
+
+add here all the shortcuts keys related to Raycast
